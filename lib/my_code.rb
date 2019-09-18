@@ -59,7 +59,7 @@ end
 def reduce_to_all_true(array)
   count = 0;
   returnVal = true;
-  while (array[count]) do
+  while (count < array.count ) do
     if (array[count]==false)
       returnVal = false;
     end
@@ -71,7 +71,7 @@ end
 def reduce_to_any_true(array)
   count = 0;
   returnVal = false;
-  while (array[count]) do
+  while (count < array.count) do
     if (array[count])
       returnVal = true
     end
