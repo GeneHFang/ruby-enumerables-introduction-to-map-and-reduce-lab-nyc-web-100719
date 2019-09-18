@@ -60,7 +60,7 @@ def reduce_to_all_true(array)
   count = 0;
   returnVal = true;
   while (array[count]) do
-    if (!array[count])
+    if (array[count])
       returnVal = false;
     end
     count+=1
