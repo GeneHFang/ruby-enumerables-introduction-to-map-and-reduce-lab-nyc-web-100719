@@ -63,6 +63,7 @@ def reduce_to_all_true(array)
     if (!array[count])
       returnVal = false;
     end
+    count+=1
   end
   returnVal
 end
@@ -74,6 +75,7 @@ def reduce_to_any_true(array)
     if (array[count])
       returnVal = true
     end
+    count+=1
   end
   returnVal
 end
